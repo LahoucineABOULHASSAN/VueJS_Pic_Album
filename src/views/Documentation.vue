@@ -1,25 +1,33 @@
 <template>
   <DocHeader />
-  <DocNav />
-  <Doc v-for="(index, doc) in docs" :key="index" :doc="doc" />
+  <DocNav @docNav="docCase = $event" />
+  <DocAPI v-if="docCase === 'api'" />
+  <DocIntro v-if="docCase === 'intro'" />
+  <DocInstall v-if="docCase === 'install'" />
+  <DocResources v-if="docCase === 'resources'" />
 </template>
 
 <script>
-import DocHeader from "./documentation/DocHeader";
 import DocNav from "./documentation/DocNav";
-import Doc from "./documentation/Doc";
+import DocAPI from "./documentation/DocAPI";
+import DocIntro from "./documentation/DocIntro";
+import DocHeader from "./documentation/DocHeader";
+import DocInstall from "./documentation/DocInstall";
+import DocResources from "./documentation/DocResources";
 import { ref } from "vue";
 export default {
   components: {
-    DocHeader,
+    DocAPI,
     DocNav,
-    Doc,
+    DocIntro,
+    DocHeader,
+    DocInstall,
+    DocResources,
   },
   setup() {
     const docs = ref([]);
-    return { docs };
+    const docCase = ref("intro");
+    return { docs, docCase };
   },
 };
 </script>
-
-<style></style>

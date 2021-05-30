@@ -20,3 +20,13 @@ export const isActive = (event) => {
     }
   });
 };
+export const isDocNavActive = (event) => {
+  const navLinks = document.querySelectorAll(".doc-nav-item");
+  navLinks.forEach((elem) => {
+    if (elem === event.target || elem === event.target.parentElement) {
+      elem.classList.add("doc-nav-active");
+    } else {
+      elem.classList.remove("doc-nav-active");
+    }
+  });
+};
