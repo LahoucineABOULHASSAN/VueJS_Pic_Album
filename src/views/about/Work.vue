@@ -1,34 +1,66 @@
 <template>
   <div class="work">
-    <h2>Our Workspace</h2>
+    <h2>About PicAlbum</h2>
     <p>
-      <img
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
-        alt="coding"
-      />Labore, libero itaque quisquam officiis earum. Eaque, facilis,
-      quibusdam, ab, voluptates quaerat dignissimos totam nam consequuntur
-      labore explicabo temporibus atque aliquid asperiores error impedit
-      repudiandae est nemo omnis sequi quae eius quos repellat doloribus cumque
-      nulla sunt maxime ducimus commodi animi placeat quo debitis earum illum
-      numquam inventore aspernatur necessitatibus voluptatum delectus maiores
-      laboriosam magni ex illo quod corporis hic consectetur odio suscipit fugit
-      qui aperiam. Sequi, quos, nam quam debitis architecto doloribus rerum
-      illum magnam culpa ex eius nobis ducimus aspernatur aliquid laborum
-      deleniti distinctio temporibus quae.
+      <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">
+        <img
+          class="right"
+          src="https://api.thumbnail.ws/api/ab02008b512dad36b2b0338562dee5413dfd9e19a737/thumbnail/get?url=https://vuejs.org/&width=600"
+          alt="coding"
+        />
+      </a>
+      PicAlbum is a frontend website created with the framework
+      <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"
+        >Vue 3</a
+      >. It contains 4 routes:<br />/photos : as the home routes where there are
+      all the pics listed on a grid view, and each photo is a link to its own
+      details.<br />/documentation: the API documentation.<br />/about : as the
+      about page, contains the information about this page and about me too.<br />/contact
+      : as a form page for contacting me if there's any comment or feedback,
+      it's the way how to reach me.<br />The data that the website use is coming
+      from my backend API, build with Python and Flask framework, and for the
+      database, it uses the Postgres SQL service. and it's hosted on Heroku.
+      <br />This website is a photo album of nature and anything that I was able
+      to take with my phone's camera. I am practicing photography in my free
+      time. So I decided to build this web app to show the pictures on it as
+      well as a good practice of web development.
     </p>
     <p>
-      Quisque consequat lectus sed imperdiet vulputate.
-      <a href="#">Vivamus tristique</a> non elit eu faucibus. Nam et arcu
-      vestibulum, bibendum risus vitae, gravida libero. Suspendisse sed lacus
-      neque. Nullam arcu elit, luctus ut enim et, eleifend varius dui.
+      <a
+        href="https://vueportfolioapp.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          class="left"
+          src="https://api.thumbnail.ws/api/ab02008b512dad36b2b0338562dee5413dfd9e19a737/thumbnail/get?url=https://vueportfolioapp.netlify.app/&width=600"
+          alt="my portfolio"
+      /></a>
+      Take a look on
+      <a
+        href="https://vueportfolioapp.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >my portfolio page</a
+      >, if you have time, you can find more informations about me and what i
+      can do, and all the projects that i build.<br />
+      Please, if you have any questions or comments, don't hesitate to contact
+      me. you can sent an email on the contact page.. Your feedback is very
+      important to me.<br />Thank you.
     </p>
   </div>
 </template>
 <style>
 .work img {
   width: 50%;
-  float: right;
   display: block;
+}
+img.left {
+  float: left;
+  margin: 1rem;
+  margin-left: 0;
+}
+img.right {
+  float: right;
   margin: 1rem;
   margin-right: 0;
 }

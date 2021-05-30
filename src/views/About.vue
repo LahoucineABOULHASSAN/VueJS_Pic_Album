@@ -5,20 +5,20 @@
       <ul class="flex flex-column">
         <li
           class="flex about-tag active-tag"
-          @click="(event) => handleTags(event, true)"
+          @click="(event) => handleTags(event, false)"
         >
-          <i class="user icon"></i>
+          <i class="cloud icon"></i>
         </li>
-        <li class="flex about-tag" @click="(event) => handleTags(event, false)">
-          <i class="setting icon"></i>
+        <li class="flex about-tag" @click="(event) => handleTags(event, true)">
+          <i class="user icon"></i>
         </li>
       </ul>
       <article>
-        <transition class="flex flex-column" appear name="article-me"
-          ><Me v-if="me"
-        /></transition>
         <transition class="flex flex-column" appear name="article-work"
           ><Work v-if="!me"
+        /></transition>
+        <transition class="flex flex-column" appear name="article-me"
+          ><Me v-if="me"
         /></transition>
       </article>
     </section>
@@ -32,7 +32,7 @@ import { isActive } from "../utilities/nav";
 export default {
   components: { Me, Work },
   setup() {
-    const me = ref(true);
+    const me = ref(false);
     const handleTags = (event, val) => {
       me.value = val;
       isActive(event);
@@ -88,19 +88,19 @@ export default {
 article {
   overflow: hidden;
 }
-.article-me-enter-active {
+.article-work-enter-active {
   animation: slide-in 0.8s forwards;
   -webkit-animation: slide-in 1s forwards;
 }
-.article-me-leave-active {
+.article-work-leave-active {
   animation: slide-out 0.8s forwards;
   -webkit-animation: slide-out 1s forwards;
 }
-.article-work-enter-active {
+.article-me-enter-active {
   animation-delay: 0.4;
   animation: slide-to-bottom 1s ease-out;
 }
-.article-work-leave-active {
+.article-me-leave-active {
   animation: slide-to-top 1s ease-out;
 }
 @keyframes slide-in {

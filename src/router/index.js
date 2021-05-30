@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import { Photos, About, Contact, PhotoDetails } from "../views";
+import { Photos, About, Contact, PhotoDetails, Documentation } from "../views";
 
 const routes = [
   {
@@ -11,6 +11,11 @@ const routes = [
     path: "/photos/:id",
     name: "photo",
     component: PhotoDetails,
+  },
+  {
+    path: "/documentation",
+    name: "documentation",
+    component: Documentation,
   },
   {
     path: "/about",

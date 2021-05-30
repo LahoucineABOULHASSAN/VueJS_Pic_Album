@@ -4,11 +4,14 @@
       <div class="nav-btn" @click="displayMenu">
         <i class="bars icon"></i>
       </div>
-      <span>PhotoRev</span>
+      <span>PicAlbum</span>
     </div>
     <div class="menu">
       <router-link class="nav-link" to="/" @click="() => scrollTo('#photos')"
         >Photos</router-link
+      >
+      <router-link class="nav-link" to="/documentation"
+        >Documentation</router-link
       >
       <router-link class="nav-link" to="/about">About</router-link>
       <router-link class="nav-link" to="/contact">Contact</router-link>
