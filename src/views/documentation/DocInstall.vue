@@ -104,6 +104,16 @@
         This will install all of the required packages included within the
         <strong>requirements.txt</strong> file.
       </p>
+      <br />
+      <p>
+        When everything is installed correctly, the make sure to update the
+        <strong> setup.sh </strong>file.<br />
+        From within the <em>/backEnd</em> directory, ensure you are working
+        using your created virtual environment then run the server, by executing
+        these commands:
+        <span class="command"><i class="icon terminal"></i>source setup.sh</span
+        ><span class="command"><i class="icon terminal"></i>python app.py</span>
+      </p>
       <h5># Database Setup</h5>
       <p>
         This app use a relational database management system which is
