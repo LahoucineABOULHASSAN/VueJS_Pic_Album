@@ -31,3 +31,21 @@ export default {
   },
 };
 </script>
+<style>
+.doc {
+  width: 90%;
+  padding: 2rem;
+  margin: 2rem auto;
+  color: var(--secondary);
+  background: var(--lessLighter);
+}
+.doc > * {
+  margin-bottom: 1rem;
+}
+.doc h2 {
+  margin-bottom: 2rem;
+}
+.doc p {
+  text-align: justify;
+}
+</style>

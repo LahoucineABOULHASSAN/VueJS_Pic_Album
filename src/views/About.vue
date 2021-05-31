@@ -193,13 +193,6 @@ article div img {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
-article div p a {
-  color: var(--green);
-  text-transform: capitalize;
-}
-article div p a:hover {
-  text-decoration: underline;
-}
 article div h4 {
   width: 100%;
   color: var(--grey);

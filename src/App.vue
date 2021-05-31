@@ -15,12 +15,12 @@ export default {
 :root {
   --primary: #06aabb;
   --secondary: #494949;
-  --yellow: #ffca1b;
+  --yellow: #ffc107;
   --green: #06bb57;
   --red: #f74067;
   --grey: #838282;
   --error: #bb0606;
-  --primaryLight: #1ae5ece7;
+  --primaryLight: #00bcd4;
   --primaryLighter: #80aab841;
   --primaryDark: #03acac;
   --primaryDarker: #0290a0c9;
@@ -121,6 +121,17 @@ li {
 .btn-link:hover {
   color: var(--primaryDark);
   border-bottom: 1px solid var(--primaryDark);
+}
+article div p a,
+.doc-intro a,
+.doc-inst a {
+  color: var(--green);
+  text-transform: capitalize;
+}
+article div p a:hover,
+.doc-intro a:hover,
+.doc-inst a:hover {
+  text-decoration: underline;
 }
 /* Photo Rating style */
 .fa-circle {
