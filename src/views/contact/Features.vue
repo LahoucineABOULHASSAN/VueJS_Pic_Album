@@ -73,6 +73,9 @@ h2 {
   border-radius: 15px;
   background: var(--lessLighter);
 }
+.features > div:hover {
+  box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+}
 .features div i.icon {
   margin: 0;
   color: var(--green);
