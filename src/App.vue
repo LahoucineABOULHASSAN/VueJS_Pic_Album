@@ -152,5 +152,10 @@ article div p a:hover,
   .grid-4 {
     grid-template-columns: 1fr;
   }
+  .about,
+  .contact,
+  .infos {
+    padding: 1rem;
+  }
 }
 </style>

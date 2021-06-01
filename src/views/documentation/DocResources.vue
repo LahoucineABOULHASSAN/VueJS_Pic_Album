@@ -58,4 +58,14 @@ export default {
   background: var(--primaryLighter);
   box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
 }
+@media screen and (max-width: 640px) {
+  .doc-res .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 340px) {
+  .doc-res .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

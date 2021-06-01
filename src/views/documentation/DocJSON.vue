@@ -34,4 +34,9 @@ pre {
 pre code {
   width: 100%;
 }
+@media screen and (max-width: 640px) {
+  pre {
+    padding: 2rem 0.5rem;
+  }
+}
 </style>

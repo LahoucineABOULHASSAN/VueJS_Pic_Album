@@ -7,14 +7,18 @@
       <span>PicAlbum</span>
     </div>
     <div class="menu">
-      <router-link class="nav-link" to="/" @click="() => scrollTo('#photos')"
+      <router-link class="nav-link" to="/" @click="displayMenu"
         >Photos</router-link
       >
-      <router-link class="nav-link" to="/documentation"
+      <router-link class="nav-link" to="/documentation" @click="displayMenu"
         >Documentation</router-link
       >
-      <router-link class="nav-link" to="/about">About</router-link>
-      <router-link class="nav-link" to="/contact">Contact</router-link>
+      <router-link class="nav-link" to="/about" @click="displayMenu"
+        >About</router-link
+      >
+      <router-link class="nav-link" to="/contact" @click="displayMenu"
+        >Contact</router-link
+      >
     </div>
   </nav>
 </template>
@@ -51,7 +55,7 @@ nav {
 .nav-link {
   color: var(--light);
 }
-.nav-link:hover {
+.nav-link:not(.nav-link.nav-logo):hover {
   background: var(--secondary);
 }
 .nav-link.router-link-active {

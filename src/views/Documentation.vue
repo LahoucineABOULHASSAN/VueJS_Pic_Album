@@ -107,4 +107,13 @@ export default {
 .doc-info:nth-of-type(2n + 4) > h4 {
   color: var(--red);
 }
+@media screen and (max-width: 640px) {
+  .doc {
+    width: 95%;
+    padding: 2rem 1rem;
+  }
+  .doc-info {
+    padding: 1.5rem 0.8rem;
+  }
+}
 </style>

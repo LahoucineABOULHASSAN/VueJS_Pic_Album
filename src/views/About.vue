@@ -204,4 +204,22 @@ article div ul {
   line-height: 1.6;
   padding: 0 1rem;
 }
+@media screen and (max-width: 640px) {
+  .about-section .about-me {
+    grid-template-columns: 1fr;
+  }
+  .about-me > ul {
+    flex-direction: row;
+    margin: 0.5rem auto;
+  }
+  .about-me img.right,
+  .about-me img.left,
+  .about-me article img,
+  .about-me article img {
+    margin: 0.5rem 0;
+    float: none;
+    width: 100%;
+    max-width: unset;
+  }
+}
 </style>

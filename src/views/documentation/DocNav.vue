@@ -120,4 +120,22 @@ export default {
 .doc-nav li:nth-of-type(2n + 4) i.icon {
   color: var(--primaryLight);
 }
+@media screen and (max-width: 640px) {
+  .doc-nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .doc-nav li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 2px;
+  }
+  .doc-nav li > i.icon {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
 </style>

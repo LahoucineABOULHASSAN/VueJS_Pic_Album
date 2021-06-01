@@ -7,8 +7,10 @@ export const displayMenu = () => {
 };
 export const scrollTo = (elem) => {
   const sticky = document.querySelector(elem).offsetTop;
-  document.body.scrollTop = sticky; // For Safari
-  document.documentElement.scrollTop = sticky;
+  if (sticky) {
+    document.body.scrollTop = sticky; // For Safari
+    document.documentElement.scrollTop = sticky;
+  }
 };
 export const isActive = (event) => {
   const navLinks = document.querySelectorAll(".about-tag");
