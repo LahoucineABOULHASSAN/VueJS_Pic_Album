@@ -51,8 +51,11 @@ nav {
 .nav-link {
   color: var(--light);
 }
+.nav-link:hover {
+  background: var(--secondary);
+}
 .nav-link.router-link-active {
-  background: var(--primary);
+  background: var(--primaryLight);
   color: var(--dark);
 }
 .nav-btn {

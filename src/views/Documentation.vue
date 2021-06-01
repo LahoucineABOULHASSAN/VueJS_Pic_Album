@@ -64,6 +64,9 @@ export default {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.doc-info:hover {
+  box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+}
 .doc-info .command {
   border-left: 2px solid var(--secondary);
 }

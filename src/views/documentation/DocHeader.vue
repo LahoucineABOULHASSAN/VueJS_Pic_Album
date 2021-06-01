@@ -10,11 +10,11 @@
 <style>
 .doc-header {
   padding: 3rem;
-  background: var(--primaryDark);
+  background: var(--primaryLight);
 }
 .doc-header h1 {
   font-size: 1.9rem;
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
 }
 .doc-header p {
   font-weight: bold;
