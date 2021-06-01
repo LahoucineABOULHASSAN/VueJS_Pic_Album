@@ -21,10 +21,13 @@ export default {
 
 <style>
 pre {
-  width: 100%;
+  width: auto;
+  height: auto;
   padding: 2rem;
   margin: 1rem 0;
-  overflow: hidden;
+  max-width: 100%;
+  overflow: scroll;
+  max-height: 370px;
   color: var(--light);
   background: var(--dark);
 }

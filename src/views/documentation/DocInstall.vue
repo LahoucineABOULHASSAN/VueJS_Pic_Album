@@ -206,11 +206,7 @@ export default {
 </script>
 <style>
 .doc-inst h2 {
-  text-align: center;
   color: var(--green);
-}
-.doc-inst > * {
-  width: 100%;
 }
 .doc-inst .commands > p {
   margin-top: 2px;
@@ -221,46 +217,5 @@ export default {
 .doc-inst p span i.icon {
   font-size: 0.8rem;
   margin-right: 1rem;
-}
-.command {
-  width: auto;
-  min-width: 30%;
-  padding: 3px 1rem;
-  word-spacing: 5px;
-  color: var(--grey);
-}
-.doc-info .command {
-  border-left: 2px solid var(--secondary);
-}
-.doc-info {
-  padding: 1.5rem;
-  background: var(--light);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.doc-info p {
-  margin-left: 5px;
-}
-.doc-info .command {
-  margin: 5px 0;
-  display: block;
-}
-.doc-info h5 {
-  margin: 1rem 0;
-  padding: 3px;
-  color: var(--lessLighter);
-  background: var(--secondary);
-}
-.doc-info:nth-of-type(2n + 0) {
-  border-left: 3px solid var(--primaryLight);
-}
-.doc-info:nth-of-type(2n + 1) {
-  border-left: 3px solid var(--green);
-}
-.doc-info:nth-of-type(2n + 0) > h4 {
-  color: var(--primaryLight);
-}
-.doc-info:nth-of-type(2n + 1) > h4 {
-  color: var(--green);
 }
 </style>
