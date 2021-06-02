@@ -47,12 +47,10 @@
   </ul>
 </template>
 <script>
-import { onMounted } from "vue";
-import { isDocNavActive, stick } from "../../utilities/nav";
+import { isDocNavActive } from "@/utilities/nav";
 export default {
   setup() {
-    onMounted(() => (window.onscroll = () => stick()));
-    return { isDocNavActive, stick };
+    return { isDocNavActive };
   },
 };
 </script>

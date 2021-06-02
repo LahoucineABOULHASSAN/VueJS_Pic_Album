@@ -34,8 +34,20 @@
         >Lahoucine Aboulhassan</a
       >
     </p>
+    <ToTop />
   </section>
 </template>
+<script>
+import { onMounted } from "vue";
+import ToTop from "./ToTop";
+import { stick } from "@/utilities/nav";
+export default {
+  components: { ToTop },
+  setup() {
+    onMounted(() => (window.onscroll = () => stick()));
+  },
+};
+</script>
 <style>
 /* Copyrights Style */
 .copyrights {
@@ -43,6 +55,7 @@
   padding: 1rem;
   text-align: center;
   color: var(--dark);
+  position: relative;
   background: var(--primaryLight);
 }
 .copyrights p {
