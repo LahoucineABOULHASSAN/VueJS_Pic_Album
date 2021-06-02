@@ -32,3 +32,20 @@ export const isDocNavActive = (event) => {
     }
   });
 };
+export const stick = () => {
+  const docNav = document.querySelector(".doc-nav");
+  // const menu = document.querySelector(".menu");
+  // const button = document.querySelector(".to-up");
+  const sticky = docNav.offsetTop;
+  if (window.pageYOffset >= sticky) {
+    docNav.classList.add("sticky");
+  } else {
+    docNav.classList.remove("sticky");
+  }
+  // handle to up button
+  // if (window.pageYOffset >= sticky * 1.2) {
+  //   button.classList.add("fix");
+  // } else {
+  //   button.classList.remove("fix");
+  // }
+};

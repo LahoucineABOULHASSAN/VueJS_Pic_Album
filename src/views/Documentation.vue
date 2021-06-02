@@ -95,16 +95,20 @@ export default {
 .doc-info:nth-of-type(2n + 4) {
   border-left: 3px solid var(--red);
 }
-.doc-info:nth-of-type(2n + 1) > h4 {
+.doc-info:nth-of-type(2n + 1) > h4,
+.doc-info:nth-of-type(2n + 1) > h4 a {
   color: var(--yellow);
 }
-.doc-info:nth-of-type(2n + 2) > h4 {
+.doc-info:nth-of-type(2n + 2) > h4,
+.doc-info:nth-of-type(2n + 2) > h4 a {
   color: var(--primaryLight);
 }
-.doc-info:nth-of-type(2n + 3) > h4 {
+.doc-info:nth-of-type(2n + 3) > h4,
+.doc-info:nth-of-type(2n + 3) > h4 a {
   color: var(--green);
 }
-.doc-info:nth-of-type(2n + 4) > h4 {
+.doc-info:nth-of-type(2n + 4) > h4,
+.doc-info:nth-of-type(2n + 4) > h4 a {
   color: var(--red);
 }
 @media screen and (max-width: 640px) {

@@ -47,10 +47,12 @@
   </ul>
 </template>
 <script>
-import { isDocNavActive } from "../../utilities/nav";
+import { onMounted } from "vue";
+import { isDocNavActive, stick } from "../../utilities/nav";
 export default {
   setup() {
-    return { isDocNavActive };
+    onMounted(() => (window.onscroll = () => stick()));
+    return { isDocNavActive, stick };
   },
 };
 </script>
@@ -60,12 +62,26 @@ export default {
   margin: 2rem auto;
   justify-content: center;
 }
+.doc-nav.sticky {
+  left: 0;
+  right: 0;
+  top: 56px;
+  z-index: 1;
+  width: 90%;
+  margin: 0 auto;
+  position: fixed;
+}
 .doc-nav li {
   padding: 1rem;
   margin: 0 1rem;
+  color: var(--dark);
   border-radius: 3px;
   border: 1px solid;
   border-top-width: 2px;
+}
+.doc-nav.sticky li:not(li.doc-nav-active) {
+  color: var(--light);
+  background: #000000b4;
 }
 .doc-nav li:hover {
   cursor: pointer;
@@ -90,23 +106,31 @@ export default {
   border-color: #1ae5ec2c;
   border-top-color: var(--primaryLight);
 }
+/* elements */
+.doc-nav.sticky li:nth-of-type(n):hover {
+  color: var(--dark);
+}
 .doc-nav li.doc-nav-active:nth-of-type(2n + 1),
-.doc-nav li:nth-of-type(2n + 1):hover {
+.doc-nav li:nth-of-type(2n + 1):hover,
+.doc-nav.sticky li:nth-of-type(2n + 1):hover {
   background: #f740682c;
 }
 .doc-nav li.doc-nav-active:nth-of-type(2n + 2),
-.doc-nav li:nth-of-type(2n + 2):hover {
+.doc-nav li:nth-of-type(2n + 2):hover,
+.doc-nav.sticky li:nth-of-type(2n + 2):hover {
   background: #06bb572c;
 }
 .doc-nav li.doc-nav-active:nth-of-type(2n + 3),
-.doc-nav li:nth-of-type(2n + 3):hover {
+.doc-nav li:nth-of-type(2n + 3):hover,
+.doc-nav.sticky li:nth-of-type(2n + 3):hover {
   background: #ffca1b2c;
 }
 .doc-nav li.doc-nav-active:nth-of-type(2n + 4),
-.doc-nav li:nth-of-type(2n + 4):hover {
+.doc-nav li:nth-of-type(2n + 4):hover,
+.doc-nav.sticky li:nth-of-type(2n + 4):hover {
   background: #1ae5ec2c;
 }
-.doc-nav li.active,
+/* content */
 .doc-nav li:nth-of-type(2n + 1) i.icon {
   color: var(--red);
 }
@@ -116,7 +140,6 @@ export default {
 .doc-nav li:nth-of-type(2n + 3) i.icon {
   color: var(--yellow);
 }
-
 .doc-nav li:nth-of-type(2n + 4) i.icon {
   color: var(--primaryLight);
 }
