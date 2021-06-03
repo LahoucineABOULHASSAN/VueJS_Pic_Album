@@ -18,10 +18,8 @@ export default {
   components: { PhotoDetailsHeader, PhotoDetailsDesc, Loading, Error },
   setup() {
     const id = useRoute().params.id;
-    const { data, error, fetchData } = getData(
-      process.env.VUE_APP_API_URL + "/" + id
-    );
-    fetchData();
+    const { data, error, fetchData } = getData();
+    fetchData(process.env.VUE_APP_API_URL + "/" + id);
     return { id, data, error, fetchData };
   },
 };

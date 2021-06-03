@@ -1,20 +1,20 @@
-import { ref } from 'vue'
-import Axios from 'axios'
+import { ref } from "vue";
+import Axios from "axios";
 
-const getData = (url) => {
-  const data = ref([])
-  const error = ref(null)
-  const fetchData = async () => {
+const getData = () => {
+  const data = ref([]);
+  const error = ref(null);
+  const fetchData = async (url) => {
     try {
-      const res = await Axios.get(url)
+      const res = await Axios.get(url);
       if (res.status !== 200) {
-        throw Error("Couldn't get res")
+        throw Error("Couldn't get res");
       }
-      data.value = res.data
+      data.value = res.data;
     } catch (err) {
-      error.value = err.message
+      error.value = err.message;
     }
-  }
-  return { data, error, fetchData }
-}
-export default getData
+  };
+  return { data, error, fetchData };
+};
+export default getData;
