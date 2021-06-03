@@ -6,6 +6,5 @@ export { default as Alert } from "./alerts/Alert";
 export { default as Error } from "./alerts/Error";
 export { default as AboutUs } from "./footer/AboutUs";
 export { default as Loading } from "./loaders/Loading";
-export { default as Progress } from "./loaders/Progress";
 export { default as ContactUs } from "./footer/ContactUs";
 export { default as SearchForm } from "./photos/SearchForm";

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import filterData from "../../composables/filterData";
+import filterData from "@/composables/filterData";
 export default {
   name: "SearchForm",
   props: { options: Array },

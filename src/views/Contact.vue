@@ -12,7 +12,7 @@
 
 <script>
 import Features from "./contact/Features";
-import { ContactUs } from "../components";
+import { ContactUs } from "@/components";
 export default {
   components: { ContactUs, Features },
 };

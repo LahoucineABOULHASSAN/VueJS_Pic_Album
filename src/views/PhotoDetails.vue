@@ -10,8 +10,8 @@
 </template>
 <script>
 import { useRoute } from "vue-router";
-import getData from "../composables/getData";
-import { Loading, Error } from "../components";
+import getData from "@/composables/getData";
+import { Loading, Error } from "@/components";
 import PhotoDetailsDesc from "./photoDetails/PhotoDetailsDesc";
 import PhotoDetailsHeader from "./photoDetails/PhotoDetailsHeader";
 export default {

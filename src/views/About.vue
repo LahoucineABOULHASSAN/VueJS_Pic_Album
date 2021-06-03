@@ -28,7 +28,7 @@
 import { ref } from "vue";
 import Me from "./about/Me";
 import Work from "./about/Work";
-import { isActive } from "../utilities/nav";
+import { isActive } from "@/utilities/nav";
 export default {
   components: { Me, Work },
   setup() {

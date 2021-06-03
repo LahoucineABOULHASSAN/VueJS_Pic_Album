@@ -16,8 +16,8 @@
 import { ref, computed, watch } from "vue";
 import Album from "./photos/Album";
 import Pages from "./photos/Pages";
-import getData from "../composables/getData";
-import { Header, Loading, Error, Footer } from "../components";
+import getData from "@/composables/getData";
+import { Header, Loading, Error, Footer } from "@/components";
 export default {
   components: { Header, Album, Loading, Error, Footer, Pages },
   setup() {

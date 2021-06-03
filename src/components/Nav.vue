@@ -23,7 +23,7 @@
   </nav>
 </template>
 <script>
-import { displayMenu, scrollTo } from "../utilities/nav";
+import { displayMenu, scrollTo } from "@/utilities/nav";
 export default {
   setup() {
     return { displayMenu, scrollTo };
