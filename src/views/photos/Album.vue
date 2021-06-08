@@ -26,6 +26,9 @@ export default {
   column-gap: 6px;
   margin: 2rem auto;
 }
+.photos a {
+  display: block;
+}
 .photos img {
   cursor: pointer;
   margin-top: 3px;

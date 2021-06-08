@@ -5,7 +5,7 @@
     <Loading v-else-if="!error" />
     <Error v-if="error" :error="error" />
     <Pages
-      v-if="data.success"
+      v-if="data.totale_photos > 12"
       :num="Math.ceil(data.totale_photos / 12)"
       @changePage="handlePagination($event)"
     />
@@ -30,7 +30,6 @@ export default {
     fetchData(process.env.VUE_APP_API_URL + `?page=${currentPage.value}`);
     watch(currentPage, (currentValue) => {
       fetchData(process.env.VUE_APP_API_URL + `?page=${currentValue}`);
-      console.log("call");
     });
     const filterResults = computed(() =>
       data.value.photos.filter((photo) =>
