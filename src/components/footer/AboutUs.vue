@@ -5,12 +5,13 @@
       alt="certificate online"
     />
     <div class="about flex flex-column">
-      <h2>About Us</h2>
+      <h2>About PicAlbum</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-        repellendus itaque, deleniti sed ducimus nobis delectus provident nisi
-        ad consequuntur aliquid sequi sapiente voluptatum, deserunt quidem
-        maxime accusamus ipsam libero?
+        PicAlbum is a frontend website created with the framework Vue 3.<br />
+        The Idea of it, is to use it to show my photography pictures, as well as
+        it is a good practice for my frontend projects.<br />
+        In this site i get to use many technologies such as Axios, Highligh.js,
+        and moments.
       </p>
     </div>
   </section>

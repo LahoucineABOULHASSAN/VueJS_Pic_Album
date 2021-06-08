@@ -27,7 +27,7 @@ footer {
   color: var(--light);
   background: var(--dark);
 }
-footer .grid-2 {
+footer > .grid-2 {
   grid-gap: 0;
 }
 /*  to top button */

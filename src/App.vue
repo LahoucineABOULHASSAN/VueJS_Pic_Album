@@ -66,9 +66,9 @@ section:not(.copyrights, footer section, header section) {
   color: var(--dark);
   background: var(--light);
 }
-.about,
-.contact,
-.infos {
+.about.flex,
+.contact.flex,
+.infos.flex {
   padding: 1rem 2.5rem;
   justify-content: center;
 }
