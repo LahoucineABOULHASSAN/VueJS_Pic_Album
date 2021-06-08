@@ -2,10 +2,17 @@
   <div id="infos" className="infos flex flex-column">
     <div className="grid grid-2">
       <div>
-        <h5>About Us</h5>
+        <h5>About Me</h5>
         <small>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-          voluptates.
+          I'm Lahoucine Aboulhassan, thanks for visiting my app, you can find
+          more on
+          <a
+            className="portfolio"
+            href="https://vueportfolioapp.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >my portfolio</a
+          >.
         </small>
       </div>
       <div>
@@ -73,7 +80,12 @@
   color: var(--light);
   margin-bottom: 0.4rem;
 }
-#infos .info-link:hover {
-  color: var(--blue);
+#infos .info-link:hover,
+#infos .portfolio:hover {
+  text-decoration: underline;
+}
+#infos .portfolio {
+  cursor: pointer;
+  color: var(--green);
 }
 </style>
