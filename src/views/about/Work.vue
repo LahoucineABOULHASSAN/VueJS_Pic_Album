@@ -27,7 +27,7 @@
     </p>
     <p>
       <a
-        href="https://vueportfolioapp.netlify.app/"
+        href="https://aboulhassan.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
         ><img
@@ -37,7 +37,7 @@
       /></a>
       Take a look on
       <a
-        href="https://vueportfolioapp.netlify.app/"
+        href="https://aboulhassan.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
         >my portfolio page</a
