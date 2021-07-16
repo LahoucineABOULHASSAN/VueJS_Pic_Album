@@ -27,7 +27,7 @@
       <span>PicAlbum</span>, Copyrights &copy; {{ new Date().getFullYear() }} |
       by
       <a
-        href="https://vueportfolioapp.netlify.app/"
+        href="https://aboulhassan.netlify.app/"
         class="btn-link"
         target="_blank"
         rel="noopener noreferrer"

@@ -34,7 +34,7 @@
       <div class="flex flex-column">
         <p>
           <a
-            href="https://vueportfolioapp.netlify.app/"
+            href="https://aboulhassan.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             >portfolio</a

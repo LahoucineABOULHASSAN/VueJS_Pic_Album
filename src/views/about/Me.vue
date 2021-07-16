@@ -8,7 +8,7 @@
           alt="me in person"
         />Hi there i'm
         <a
-          href="https://vueportfolioapp.netlify.app/"
+          href="https://aboulhassan.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           >Lahoucine Aboulhassan</a
@@ -34,7 +34,7 @@
         >. And i will greatly appreciate it if you can provide some feedback or
         available internships in web development. Enjoy looking through
         <a
-          href="https://vueportfolioapp.netlify.app/"
+          href="https://aboulhassan.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           >my portfolio</a
